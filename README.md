@@ -4,7 +4,7 @@ Parameter Optimization for ETS models
 
 ## Source
 
-I have completed Time Series Forecasting course offered by Udacity. The code shown in this repository is in continuation to the same course. One of the forecasting methods is ETS model were E,T,S stand for Error, Trend, Seasonality respectively. First of all, decompose the given time series into its constituent elements/parts (Trend, Seasonality, Residuals). Depending on how trend and seasonality terms are (additive or multiplicative) select smoothing equations. 
+One of the forecasting methods is ETS model were E,T,S stand for Error, Trend, Seasonality respectively. First of all, decompose the given time series into its constituent elements/parts (Trend, Seasonality, Residuals). Depending on how trend and seasonality terms are (additive or multiplicative) select smoothing equations. 
 
 **ETS models**
 
@@ -21,5 +21,4 @@ numpy
 pandas
 matplotlib
 scipy
-
 ```
