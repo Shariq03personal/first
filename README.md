@@ -2,87 +2,23 @@
 
 Parameter Optimization for ETS models
 
-## Getting Started
+## Source
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+I have completed Time Series Forecasting course offered by Udacity. The code shown in this repository is in continuation to the same course. One of the forecasting methods is ETS model were E,T,S stand for Error, Trend, Seasonality respectively. First of all, decompose the given time series into its constituent elements/parts (Trend, Seasonality, Residuals). Depending on how trend and seasonality terms are (additive or multiplicative) select smoothing equations. 
 
-### Prerequisites
+###ETS models
+* Simple exponential smoothing
+* Holt's Linear Trend method
+* Exponential Trend method
+* Holt Winter's Seasonality method
 
-What things you need to install the software and how to install them
+Each of the smoothing equations require a set of parameters to be passed depending on the method you choose. For selecting the best set of parameters, I have used **Basin Hopping** algorithm available in Scipy which minimizes the RMSE. The goodness of the fit is measured in MAPE (Mean Absolute Percent Error). For furthur understanding of working of ETS models read this [tutorial](https://grisha.org/blog/2016/01/29/triple-exponential-smoothing-forecasting)
+
+## Prerequisites
+```
+numpy
+pandas
+matplotlib
+scipy
 
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
