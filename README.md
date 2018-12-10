@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of project description goes here
+Parameter Optimization for ETS models
 
 ## Getting Started
 
